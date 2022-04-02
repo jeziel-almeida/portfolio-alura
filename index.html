@@ -29,7 +29,7 @@
                 <li class="cabecalho__link"><a href="#skills">Skills</a></li>
                 <li class="cabecalho__link"><a href="#hobbies">Hobbies</a></li>
                 <li class="cabecalho__link"><a href="#formacao">Formação</a></li>
-                <li class="cabecalho__link"><a href="#">Projetos</a></li>
+                <li class="cabecalho__link"><a href="#projetos">Projetos</a></li>
             </ul>
         </nav>
     </header>
@@ -57,32 +57,32 @@
             <h2 class="skills__titulo">Skills</h2>
             <ul class="skills_conteudo">
                 <li class="skills__item">
-                    <figure>
-                        <img src="img/javascript.png" alt="">
+                    <figure class="skills__figure">
+                        <img src="img/javascript.png" alt="" class="skills__imagem">
                         <figcaption>Javascript</figcaption>
                     </figure>
                 </li>
                 <li class="skills__item">
-                    <figure>
-                        <img src="img/html.png" alt="">
+                    <figure class="skills__figure">
+                        <img src="img/html.png" alt="" class="skills__imagem">
                         <figcaption>HTML</figcaption>
                     </figure>
                 </li>
                 <li class="skills__item">
-                    <figure>
-                        <img src="img/css.png" alt="">
+                    <figure class="skills__figure">
+                        <img src="img/css.png" alt="" class="skills__imagem">
                         <figcaption>CSS</figcaption>
                     </figure>
                 </li>
                 <li class="skills__item">
-                    <figure>
-                        <img src="img/cplusplus.png" alt="">
+                    <figure class="skills__figure">
+                        <img src="img/cplusplus.png" alt="" class="skills__imagem">
                         <figcaption>C++</figcaption>
                     </figure>
                 </li>
                 <li class="skills__item">
-                    <figure>
-                        <img src="img/python.png" alt="">
+                    <figure class="skills__figure">
+                        <img src="img/python.png" alt="" class="skills__imagem">
                         <figcaption>Python</figcaption>
                     </figure>
                 </li>
@@ -93,41 +93,23 @@
             <h2 class="hobbies__titulo">Hobbies</h2>
             <ul class="hobbies__conteudo">
                 <li class="hobbies__item">
-                    <figure>
-                        <img src="img/book.png" alt="">
+                    <figure class="hobbies__figure">
+                        <img src="img/book.png" alt="" class="hobbies__imagem">
                         <figcaption>Leitura</figcaption>
                     </figure>
                 </li>
                 <li class="hobbies__item">
-                    <figure>
-                        <img src="img/music.png" alt="">
+                    <figure class="hobbies__figure">
+                        <img src="img/music.png" alt="" class="hobbies__imagem">
                         <figcaption>Música</figcaption>
                     </figure>
                 </li>
                 <li class="hobbies__item">
-                    <figure>
-                        <img src="img/cook.png" alt="">
+                    <figure class="hobbies__figure">
+                        <img src="img/cook.png" alt="" class="hobbies__imagem">
                         <figcaption>Cozinhar</figcaption>
                     </figure>
                 </li>
-                <!-- <li class="hobbies__item">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-                <li class="hobbies__item">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-                <li class="hobbies__item">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </li> -->
             </ul>
         </section>
 
@@ -152,7 +134,7 @@
             </ul>
         </section>
 
-        <section class="projetos container">
+        <section class="projetos container" id="projetos">
             <h2 class="projetos__titulo">Experiência profissional</h2>
             <ul class="projetos__conteudo">
                 <li class="projetos__item">
@@ -182,27 +164,48 @@
 
         <section class="contato container">
             <h2 class="contato__titulo">Contato</h2>
-            <img src="img/telefone.jpg" alt="" class="contato__imagem">
-            <p class="contato__info">Quer entrar em contato comigo?<br>Preencha o formulário e entrarei em contato o
-                mais rápido possível.</p>
-            <form action="" class="contato-form">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" class="input-contato" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" class="input-contato" required placeholder="example@dominio.com">
-                <label for="assunto">Assunto</label>
-                <input type="text" name="assunto" class="input-contato">
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="40" rows="10" class="input-contato" required></textarea>
-
-                <input type="submit" value="Enviar formulário" class="enviar">
-            </form>
+            <div class="contato__conteudo">
+                <img src="img/telefone.jpg" alt="" class="contato__imagem">
+                <div class="contato__formulario">
+                    <p class="contato__info">Quer entrar em contato comigo?<br>Preencha o formulário e entrarei em contato o
+                        mais rápido possível.</p>
+                    <form action="" class="contato-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="input-contato" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="input-contato" required placeholder="example@dominio.com">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" name="assunto" id="assunto" class="input-contato">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="40" rows="10" class="input-contato" required></textarea>
+        
+                        <input type="submit" value="Enviar formulário" class="enviar">
+                    </form>
+                </div>
+            </div>
+            
+            
         </section>
     </main>
 
-    <footer>
-
+    <footer class="rodape container">
+        <h1 class="rodape__titulo">Jeziel Almeida</h1>
+        <ul class="rodape__social">
+            <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#" class="rodape__midia"><img src="img/linkedin.png" alt=""></a></li>
+            <li><a href="#" class="rodape__midia"><img src="img/github.png" alt=""></a></li>
+        </ul>
+        <nav>
+            <ul class="rodape__navegacao">
+                <li class="rodape__link"><a href="#sobremim">Sobre mim</a></li>
+                <li class="rodape__link"><a href="#skills">Skills</a></li>
+                <li class="rodape__link"><a href="#hobbies">Hobbies</a></li>
+                <li class="rodape__link"><a href="#formacao">Formação</a></li>
+                <li class="rodape__link"><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav> 
     </footer>
+
 </body>
 
 </html>
